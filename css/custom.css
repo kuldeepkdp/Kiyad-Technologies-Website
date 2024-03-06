@@ -75,8 +75,8 @@ p {
   background-color: #048e98;
   color: #fff;
   display: flex;
-  justify-content: space-between; /* Align the text to the right */
-  align-items: center; /* Center the text vertically */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .accordion-body {
@@ -118,16 +118,15 @@ footer {
 /* Media Query for Carousel Height on Mobile Devices */
 @media (max-width: 767px) {
   .carousel-item img {
-    height: 300px;
+    height: 500px;
   }
 }
 
-/* Add this to your custom.css file or within the <style> tag in the head of your HTML */
 @media (max-width: 767px) {
   .map-container {
     position: relative;
     overflow: hidden;
-    padding-bottom: 75%; /* Adjust the desired aspect ratio (height / width) for mobile view */
+    padding-bottom: 75%;
     height: 0;
   }
 
