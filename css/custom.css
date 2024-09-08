@@ -1,3 +1,43 @@
+.colourA{
+  color: #048E98;
+}
+
+.bgcolourA{
+  background-color: #048E98;
+}
+
+.colourB{
+  color: #ff4d4d;
+}
+
+.bgcolourB{
+  background-color: #ff4d4d;
+}
+
+.colourC{
+  color: #7e7e7e;
+}
+
+.bgcolourC{
+  background-color: #7e7e7e;
+}
+
+.colourD{
+  color: #fff;
+}
+
+.bgcolourD{
+  background-color: #fff;
+}
+
+.colourE{
+  color: #272727;
+}
+
+.bgcolourE{
+  background-color: #272727;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 18px;
@@ -138,7 +178,7 @@ p {
 /* Alert Section */
 .alert {
   margin: 20px 0;
-  background-color: #f2a900;
+  background-color: #ff4d4d;
   color: #fff;
   border-radius: 5px;
   padding: 20px;
