@@ -42,6 +42,15 @@ p {
 }
 
 /* Carousel */
+
+.carousel {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* Ensures no part of the image goes outside the container */
+  position: relative;
+}
+
+
 .carousel-item img {
   width: 100%;
   height: auto;
@@ -53,8 +62,8 @@ p {
   position: absolute;
   top: 10px; /* Adjust this value to control the vertical position */
   right: 10px; /* Adjust this value to control the horizontal position */
-  width: 350px; /* Adjust the size of the emblem */
-  height: auto;
+  width: auto; /* Adjust the size of the emblem */
+  height: 50%;
   z-index: 10; /* Ensures the emblem is above other carousel elements */
   pointer-events: none; /* Ensures the emblem doesn't interfere with carousel controls */
   filter: drop-shadow(0px 0px 20px #000000);
@@ -160,9 +169,7 @@ footer {
   .mobile-emblem {
     width: 200px;
   }
-  .carousel-item img {
-    height: 550px;
-  }
+
   .carousel-emblem {
     display: none;
   }
@@ -170,6 +177,18 @@ footer {
     margin: 0px;
   }
 }
+
+
+
+@media (min-width: 767px) and (max-width: 900px) {
+  .carousel {
+      height: 90vh; /* Slightly reduced height */
+  }
+  .carousel img {
+      object-fit: cover; /* Image covers container */
+  }
+}
+
 
 @media (max-width: 767px) {
   .map-container {
